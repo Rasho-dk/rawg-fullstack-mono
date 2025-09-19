@@ -1,5 +1,6 @@
 {
-  "name": "rawg-fullstack-mono",
+  // rawg-fullstack-mono
+  "name": "rawg_full_stack",
   "private": true,
   "version": "0.0.0",
   "type": "module",
