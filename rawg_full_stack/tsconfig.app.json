@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+     "paths": {
+      "@/*": ["./src/*"]
+    },
      //*debugging option****
     /*
     "sourceMap": true enables generation of source maps for debugging.
@@ -9,7 +12,8 @@
     "inlineSources": true,//*
     //***********************
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2022",
+
+    "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
