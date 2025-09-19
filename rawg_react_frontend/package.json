@@ -1,6 +1,5 @@
 {
-  // rawg-fullstack-mono
-  "name": "rawg_full_stack",
+  "name": "rawg_react_frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
