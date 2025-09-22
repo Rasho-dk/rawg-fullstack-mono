@@ -2,7 +2,8 @@ import { Button, Container, For, VStack } from "@chakra-ui/react";
 
 import GenreItem from "@/components/custom/GenreItem";
 import GenreSkeleton from "@/components/custom/GenreSkeleton";
-import useGenres, { type Genre } from "@/hooks/use-genres";
+import useGenres from "@/hooks/use-genres";
+import type { Genre } from "@/types/game";
 
 interface props {
   onSelectGenre: (genre: Genre) => void;
@@ -29,6 +30,7 @@ const GenreList = ({ onSelectGenre }: props) => {
               onClick={() => onSelectGenre(genre)}
               variant="ghost"
               width="100%"
+              fontSize="lg"
               justifyContent="flex-start"
             >
               <GenreItem genre={genre} />

@@ -1,10 +1,6 @@
 import useData from "@/hooks/use-data"
+import type { Genre } from "@/types/game"
 
-export interface Genre {
-    id: number
-    name: string
-    image_background: string
-}
 
 
 
