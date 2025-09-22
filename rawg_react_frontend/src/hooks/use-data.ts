@@ -2,18 +2,18 @@ import apiClient from "@/services/api-client";
 import { CanceledError } from "axios";
 import { useEffect, useState } from "react";
 
-interface Response<Type> {
+interface Response<T> {
     count: number
-    results: Type[]
+    results: T[]
 }
 
-const useGame = <type>(path: string) => {
-    const [data, setData] = useState<type[]>([])
+const useData = <T>(path: string) => {
+    const [data, setData] = useState<T[]>([])
     const [error, setError] = useState('')
 
     useEffect(() => {
         const controller = new AbortController()
-        apiClient.get<Response<type>>(path, { signal: controller.signal })
+        apiClient.get<Response<T>>(path, { signal: controller.signal })
             .then(res => {
                 setData(res.data.results)
             })     
@@ -29,4 +29,4 @@ const useGame = <type>(path: string) => {
 
 }
 
-export default useGame
+export default useData
