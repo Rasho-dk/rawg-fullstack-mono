@@ -1,17 +1,17 @@
-import type { Game } from "../types/game";
+import useData from "@/hooks/generic-function/use-data";
+import type { Game, GameQuery } from "@/types/game";
 
-import useData from "@/hooks/use-data";
-import type { Genre } from "@/types/game";
-
-const useGames = (selectedGenre?: Genre | null) => {
+const useGames = (gameQuery: GameQuery) => {
   const { data, error, isLoading } = useData<Game>(
     "/games",
     {
       params: {
-        genres: selectedGenre?.id,
+        genres: gameQuery?.genre?.id,
+        platforms: gameQuery?.platform?.id,
+        stores: gameQuery?.store?.id,
       },
     },
-    [selectedGenre],
+    [gameQuery],
   );
   return { games: data, error, isLoading };
 };

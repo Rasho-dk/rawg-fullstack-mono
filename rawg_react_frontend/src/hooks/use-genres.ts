@@ -1,9 +1,6 @@
-import useData from "@/hooks/use-data"
-import type { Genre } from "@/types/game"
+import useData from "@/hooks/generic-function/use-data";
+import type { Genre } from "@/types/game";
 
+const useGenres = () => useData<Genre>("/genres");
 
-
-
-const useGenres = () => useData<Genre>('/genres')
-
-export default useGenres
+export default useGenres;
