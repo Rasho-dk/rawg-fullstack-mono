@@ -1,6 +1,7 @@
-import { Flex, Image } from '@chakra-ui/react';
-import { ColorModeButton } from '@/components/ui/color-mode';
-import logo from '@/assets/logo.png';
+import { Flex, Image } from "@chakra-ui/react";
+
+import logo from "../assets/logo.png";
+import { ColorModeButton } from "../components/ui/color-mode";
 
 const NavBar = () => {
   return (
@@ -14,7 +15,6 @@ const NavBar = () => {
     >
       <Image src={logo} alt="Logo" height="40px" />
       <ColorModeButton />
-      
     </Flex>
   );
 };
