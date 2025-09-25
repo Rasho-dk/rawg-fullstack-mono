@@ -1,21 +1,21 @@
 {
   /*
   * This file is the TypeScript configuration file for the project.
-  * Its to
+  Chakra UI
   */
   "compilerOptions": {
-     "paths": {
+    "paths": {
       "@/*": ["./src/*"]
     },
-     //*debugging option****
+    //*debugging option****
     /*
     "sourceMap": true enables generation of source maps for debugging.
     "inlineSources": true includes the original source code in the source maps.
     */
-    "sourceMap": true,//****
-    "inlineSources": true,//*
+    "sourceMap": true, //****
+    "inlineSources": true, //*
     //***********************
-       "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Path for incremental build info
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Path for incremental build info
     "target": "ES2022", // Set the JavaScript language version for output files
     "useDefineForClassFields": true, // Use 'define' semantics for class fields
     "lib": ["ES2022", "DOM", "DOM.Iterable"], // Specify library files to include in the compilation

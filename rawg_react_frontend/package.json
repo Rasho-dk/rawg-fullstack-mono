@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "typecheck:app": "tsc --project tsconfig.app.json",
+    "typecheck:node": "tsc --project tsconfig.node.json",
+    "typecheck": "npm run typecheck:app && npm run typecheck:node",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
