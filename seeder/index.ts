@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { AppDataSource } from "./data-soruce";
+import { AppDataSource } from "./data-source";
 import { Games } from "./output/entities/Games";
 import { Genres } from "./output/entities/Genres";
 import { ParentPlatforms } from "./output/entities/ParentPlatforms";
